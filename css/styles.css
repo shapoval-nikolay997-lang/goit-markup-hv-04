@@ -205,7 +205,7 @@ button {
 }
 /* #endregion */
 
-/* #region section hero 1 */
+/* #region  hero  */
 
 .container {
     max-width: 1158px;
@@ -255,7 +255,7 @@ button {
 
 /* #endregion */
 
-/* #region section2 */
+/* #region benefits */
 .benefits {
     padding: 120px 0;
 }
@@ -315,7 +315,7 @@ button {
 
 /* #endregion */
 
-/* #region section people 3 */
+/* #region  people  */
 
 .container {
      max-width: 1158px;
@@ -359,6 +359,13 @@ button {
                 0 1px 1px 0 rgba(46, 47, 66, 0.16),
                 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
+}
+
+.people-item:hover {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px rgba(46, 47, 66, 0.08);
+    
 }
 
 .people-social-link:hover,
