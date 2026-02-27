@@ -129,6 +129,9 @@ button {
 
 .header {
   border-bottom: 1px solid #e7e9fc; 
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+              0px 1px 1px rgba(46, 47, 66, 0.16), 
+              0px 1px 6px rgba(46, 47, 66, 0.08);
   
 }
 
@@ -360,7 +363,7 @@ button {
 
 .people-social-link:hover,
 .people-social-link:focus {
-    background-color: #4d5ae5;
+    background-color: #404bbf;
 }
 
 .people-list {
@@ -393,7 +396,7 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
     text-align: center;
     color: #434455;
 }
@@ -412,7 +415,7 @@ button {
     background-color: #4d5ae5;
      
      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     backgroud-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .people-socials-icon {
@@ -465,12 +468,17 @@ button {
 }
 .work-icon {
     width: calc((100% - 48px) / 3);
+    
+    
+    
+}
+
+.work-icon:hover {
     box-shadow:
      0 2px 1px 0 rgba(46, 47, 66, 0.08),
      0 1px 1px 0 rgba(46, 47, 66, 0.16), 
      0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: #fff;
-    
+     background: #fff;
 }
 
 .work-img {
@@ -575,7 +583,7 @@ button {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-    background-color: #4d5ae5;
+    background-color: #31d0aa;
 }
 
 .footer-socials-icon {
@@ -616,6 +624,7 @@ button {
 
 
 .socials-linc {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 400;
     line-height: 1.5;
     color: #434455;
