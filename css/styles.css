@@ -52,8 +52,9 @@ color: #404bbf;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: #434455;
+    transition: color 250ms;
 }
-
+/* #endregion */
 /* #region conteiner */
  
   
@@ -67,12 +68,7 @@ a {
     color: currentColor;
 }
 
-button {
-    padding: 0;
-    border: 1px solid transparent;
-    background-color: none;
-    cursor: pointer;
-}
+
 
 address {
     font-style: normal;
@@ -83,6 +79,33 @@ address {
 
 /* #region btn */
 
+.btn:hover,
+.btn:focus {
+    background-color: #404bbf;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 16px 32px;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 1.5;
+    display: block;
+    border: none;
+    margin: 0 auto;
+    letter-spacing: 0.04em;
+    
+}
+button {
+    padding: 0;
+    border: 1px solid transparent;
+    background-color: none;
+    cursor: pointer;
+    transition:
+     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* #endregion */
 
@@ -120,18 +143,25 @@ address {
     display: block;        
     padding: 24px 0;      
     font-size: 16px;
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
    }
 
    .nav-desc-link.active::after {
     content: "";
     border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+
     display: block;
     width: 100%;
     height: 4px;
     background-color: #404bbf;
 
+}
+.nav-desc-link.active {
+    position: relative;
+    color: #404bbf;
 }
 
    
@@ -218,24 +248,7 @@ address {
     background-size: cover;
 }
 
-.btn:hover,
-.btn:focus {
-    background-color: #404bbf;
-}
 
-.btn {
-    border-radius: 4px;
-    padding: 16px 32px;
-    background-color: #4D5AE5;
-    color: #FFFFFF;
-    font-weight: 500;
-    line-height: 1.5;
-    display: block;
-    border: none;
-    margin: 0 auto;
-    letter-spacing: 0.04em;
-    
-}
 
 /* #endregion */
 
@@ -339,13 +352,15 @@ address {
                 0px 1px 1px rgba(46, 47, 66, 0.16), 
                 0px 2px 1px rgba(46, 47, 66, 0.08),
                 0px 2px 1px rgba(46, 47, 66, 0.08);
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-                background: #fff;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+                0 1px 1px 0 rgba(46, 47, 66, 0.16),
+                0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
 }
 
 .people-social-link:hover,
 .people-social-link:focus {
-    background-color: #fff;
+    background-color: #4d5ae5;
 }
 
 .people-list {
@@ -395,7 +410,9 @@ address {
     height: 40px;
     border-radius: 50%;
     background-color: #4d5ae5;
-     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     backgroud-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .people-socials-icon {
@@ -531,7 +548,7 @@ address {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-    background-color: #fff;
+    background-color: #4d5ae5;
 }
 
 .footer-socials-icon {
@@ -551,6 +568,8 @@ address {
     gap: 16px;
     list-style: none;
     padding: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .footer-social-link {
