@@ -494,6 +494,33 @@ button {
     border-top: none;
 }
 
+.work-icon:hover .overlay {
+    transform: translateY(0);
+}
+
+.work-wrapper-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background: #4d5ae5;
+}
+
 /* #endregion */
 
 /* #region footer */
