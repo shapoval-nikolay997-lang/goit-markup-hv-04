@@ -317,26 +317,9 @@ button {
 
 /* #region  people  */
 
-.container {
-     max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 .people {
-    
-    background: #f4f4fd;
-    font-size: 36px;
-    letter-spacing: 0.02em;
-    line-height: 1.11;
-
-}
-.team-content-wrapper {
-    padding: 32px 16px;
-}
-.content-wrapper {
-    display: flex;
-    align-items: baseline;
+    background-color: #f4f4fd;
+    padding: 120px 0; /* Додано відступи для секції */
 }
 
 .people-text {
@@ -344,49 +327,33 @@ button {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
     margin-bottom: 72px;
-}
-.people-item {
-    padding: 0;
-    background-color: #fff;
-    border-radius: 0 0 4px 4px;
-    width: calc((100% - 72px) / 4);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-                0px 1px 1px rgba(46, 47, 66, 0.16), 
-                0px 2px 1px rgba(46, 47, 66, 0.08),
-                0px 2px 1px rgba(46, 47, 66, 0.08);
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-                0 1px 1px 0 rgba(46, 47, 66, 0.16),
-                0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: #fff;
-}
-
-.people-item:hover {
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
-                0px 1px 1px rgba(46, 47, 66, 0.16), 
-                0px 1px 6px rgba(46, 47, 66, 0.08);
-    
-}
-
-.people-social-link:hover,
-.people-social-link:focus {
-    background-color: #404bbf;
 }
 
 .people-list {
     display: flex;
-    justify-content: center;
     gap: 24px;
     list-style: none;
     padding: 0;
     margin: 0;
+    justify-content: center;
 }
 
-.people-ill {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.people-item {
+    background-color: #ffffff;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+.team-content-wrapper {
+    padding: 32px 0; /* Центруємо контент */
+}
+
 .people-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -394,48 +361,44 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin: 8px;
+    margin-bottom: 8px;
 }
 
 .title-subtitle-text {
     font-size: 16px;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
     text-align: center;
     color: #434455;
-}
-.people-cocials {
-    display: flex;
-    fill: #4D5AE5;
-}
-
-.people-social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #4d5ae5;
-     
-     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.people-socials-icon {
-     fill: #f4f4fd;
-
+    margin-bottom: 8px;
 }
 
 .people-social-list {
     display: flex;
+    justify-content: center;
     gap: 24px;
     list-style: none;
     padding: 0;
+}
 
+.people-social-link {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.people-social-link:hover,
+.people-social-link:focus {
+    background-color: #404bbf;
+}
+
+.people-socials-icon {
+    fill: #f4f4fd;
 }
 
 /* #endregion */
